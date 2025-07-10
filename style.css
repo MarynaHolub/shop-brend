@@ -56,6 +56,8 @@ img {
     color: #F16D7F;
 }
 
+
+
 .cart-content {
     padding-top: 96px;
     padding-bottom: 128px;
@@ -213,3 +215,37 @@ img {
     background-color: #F16D7F;
     border: none;
 }
+
+@media (max-width: 840px) {
+    .start-info__heading {
+        margin-left: 16px;
+    }
+
+    .cart-content {
+        flex-direction: column;
+        /* меняем направление на вертикальное */
+        justify-content: center;
+        /* центрируем (опционально) */
+        align-items: center;
+
+    }
+
+    .cart-info {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cart-info__form {
+        margin-top: 64px;
+    }
+
+    .cart-info__total {
+        margin-top: 103px;
+        margin-left: 15px;
+    }
+
+}
+
+
+
+@media (max-width: 640px) {}
